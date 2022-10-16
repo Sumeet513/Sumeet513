@@ -1,0 +1,19 @@
+<script>
+     var record =new promise((res,rej)=>{
+       // promises has three states
+        console.log(typeof res,typeof rej);
+        res("Task is completed")
+        //res("Task is incompleted")
+
+     })
+     console.log(record);
+     record.then((value)=>{
+    
+     console.log(value);
+    }).catch(error)=>{
+        console.log(error);
+    })finally(()=>{
+        console.log("procced");
+    }
+    
+</script>
